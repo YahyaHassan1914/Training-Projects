@@ -1,0 +1,3 @@
+# Ignore JSON configuration files
+email_credentials.json
+email_content.json
