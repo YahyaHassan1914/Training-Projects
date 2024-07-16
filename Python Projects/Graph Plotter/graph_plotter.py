@@ -6,7 +6,7 @@ import numpy as np
 import math  # Import math module for standard math functions
 
 """
-- Only plots t ox
+- Only plots to x
 """
 
 class GraphPlotter:

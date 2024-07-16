@@ -1,7 +1,12 @@
 import requests
 from prettytable import PrettyTable
+import json
 
-API_KEY = 'fc3b9368b26c3b75135881cf'  # Replace with your ExchangeRate-API key
+# Open the JSON file with api key
+with open('api_key.json', 'r') as file:
+    api_key = json.load(file)
+
+API_KEY = api_key["api_key"]  # Replace with your ExchangeRate-API key
 BASE_URL = f'https://v6.exchangerate-api.com/v6/{API_KEY}/latest/'
 
 class QuitProgramException(Exception):
